@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<title>LitElements • Todos</title>
+		<link rel="stylesheet" href="../shared/app.css">
+		<script src="../shared/api.js"></script>
+    </head>
+    <body>
+        <script src="app.js" type="module"></script>
+        <my-app id="myApp"></my-app>
+        <script>
+            var myApp = document.getElementById("myApp");
+            API.render = function(){
+                myApp.counter += 1;
+                myApp.update();
+            }
+        </script>
+    </body>
+</html>

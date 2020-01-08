@@ -199,12 +199,12 @@ API = {
 
 		switch (step % 5) {
 
-			case 0:
+			case 0: // remove a random item
 				this.pool.push(this.removeTodo(todo));
 				this.forceUpdate();
 				break;
 
-			case 1:
+			case 1: // add back the removed item
 				todos.splice(index,0,this.pool.pop());
 				this.dirty();
 				this.forceUpdate();

@@ -3,9 +3,11 @@ extern Benchmark
 var apps = [
 	{name: 'imba@1.3.3', path: "imba/index.html", color: '#709CB2', libSize: '16kb'}
 	{name: 'react@16.prod', path: "react/index.html", color: 'rgb(15, 203, 255)', libSize: '36kb'}
-	{name: 'vue@2.5.13', path: "vue/index.html", color: '#4fc08d', libSize: '32kb'}
+	{name: 'vue@2.5.13', path: "vue/index.html", color: '#4fc08d', libSize: '32kb'},
+	{name: 'LitElement', path: "litelement/index.html", color: 'red', libSize:'XXkb'}
 	# {name: 'glimmer@0.13.0', path: "glimmer/compiled/index.html", color: '#face8d', libSize: '34.32kb'}
 ]
+
 
 for app in apps
 	window[app:name.toUpperCase.split('@').shift] = app
